@@ -3,8 +3,8 @@
   :url "https://github.com/b-ryan/farmhand"
   :deploy-repositories [["releases" :clojars]
                         ["snapshots" :clojars]]
-  :dependencies [[org.clojure/clojure "1.5.1"]
-                 [org.clojure/core.async "0.3.441" :exclusions [org.clojure/clojure]]
+  :dependencies [[org.clojure/clojure "1.11.1"]
+                 [org.clojure/core.async "1.6.673"]
                  [org.clojure/tools.logging "0.3.1"]
                  [redis.clients/jedis "2.9.0"]]
   :global-vars {*warn-on-reflection* true}
@@ -16,6 +16,7 @@
              :1.6 {:dependencies [[org.clojure/clojure "1.6.0"]]}
              :1.7 {:dependencies [[org.clojure/clojure "1.7.0"]]}
              :1.8 {:dependencies [[org.clojure/clojure "1.8.0"]]}
-             :1.9 {:dependencies [[org.clojure/clojure "1.9.0-alpha14"]]}
+             :1.9 {:dependencies [[org.clojure/clojure "1.9.0"]]}
+             :1.11 {:dependencies [[org.clojure/clojure "1.11.1"]]}
              :codox {:plugins [[lein-codox "0.10.3"]]
                      :codox {:output-path "codox"}}})
